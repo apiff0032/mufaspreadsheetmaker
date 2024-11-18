@@ -152,9 +152,9 @@ def make_sheet(df_schedule, li_MMP, li_FMP):
     ws.conditional_formatting.add(f"B6:{get_column_letter(len(headers) + 1)}6", atleast_7_rule)
 
     if mixed:
-        ws.freeze_panes = "A9"
+        ws.freeze_panes = "B9"
     else:
-        ws.freeze_panes = "A7"
+        ws.freeze_panes = "B7"
 
     return wb
 
